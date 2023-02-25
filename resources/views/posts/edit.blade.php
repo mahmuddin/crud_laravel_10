@@ -26,7 +26,7 @@
                                 <input type="file" class="form-control" name="image">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-2">
                                 <label class="font-weight-bold">JUDUL</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror"
                                     name="title" value="{{ old('title', $post->title) }}"
@@ -40,7 +40,7 @@
                                 @enderror
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-2">
                                 <label class="font-weight-bold">KONTEN</label>
                                 <textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5"
                                     placeholder="Masukkan Konten Post">{{ old('content', $post->content) }}</textarea>
@@ -52,10 +52,11 @@
                                     </div>
                                 @enderror
                             </div>
+                            <div class="form-group pt-2">
+                                <button type="submit" class="btn btn-md btn-primary">UPDATE</button>
+                                <button type="reset" class="btn btn-md btn-warning">RESET</button>
 
-                            <button type="submit" class="btn btn-md btn-primary">UPDATE</button>
-                            <button type="reset" class="btn btn-md btn-warning">RESET</button>
-
+                            </div>
                         </form>
                     </div>
                 </div>

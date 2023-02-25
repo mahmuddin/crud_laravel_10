@@ -33,7 +33,7 @@
                                 @enderror
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-2">
                                 <label class="font-weight-bold">JUDUL</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror"
                                     name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Post">
@@ -46,7 +46,7 @@
                                 @enderror
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-2">
                                 <label class="font-weight-bold">KONTEN</label>
                                 <textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5"
                                     placeholder="Masukkan Konten Post">{{ old('content') }}</textarea>
@@ -58,9 +58,10 @@
                                     </div>
                                 @enderror
                             </div>
-
-                            <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
-                            <button type="reset" class="btn btn-md btn-warning">RESET</button>
+                            <div class="form-group pt-2">
+                                <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
+                                <button type="reset" class="btn btn-md btn-warning">RESET</button>
+                            </div>
 
                         </form>
                     </div>
