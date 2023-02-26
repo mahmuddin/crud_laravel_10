@@ -23,7 +23,7 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">GAMBAR</label>
                                 <input type="file" class="form-control @error('image') is-invalid @enderror"
-                                    name="image">
+                                    name="image" accept=".jpg,.jpeg,.png">
 
                                 <!-- error message untuk title -->
                                 @error('image')
